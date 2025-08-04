@@ -1,0 +1,57 @@
+#include <iostream>
+#include <fstream> 
+#include <string>
+#include <math.h>
+#include <cstdint>
+
+
+int calc_bit(int pos){
+    int result=std::pow(2,pos);
+    return result;
+
+
+}
+
+
+void calc_size(int size=10){
+    char items[size];
+    for (char c:items){
+        std::cout<<"loading";
+
+    }
+}
+
+
+void bytes_Word(){
+    uint32_t value =0xaabbccdd;
+    uint8_t *p =reinterpret_cast<uint8_t*>(&value);
+
+
+}
+
+
+uint32_t hton(uint32_t d){
+    uint32_t result= d<<24;
+    uint32_t  r2 = d<<8;
+    d&0x0000ff00<<8;
+    uint32_t r3 =d&0x00ff0000>>8;
+    uint32_t r4 =(d&0xff000000)>>24
+
+
+}
+int main(){
+
+    std::string text;
+    std::ifstream MyReadFile("letter.txt");
+    while (getline (MyReadFile,text)){
+        //std::cout<<text;
+    }
+
+    std::cout<<"Calculatin size";
+    calc_size(10);
+
+    std::cout<<text;
+
+
+}
+
