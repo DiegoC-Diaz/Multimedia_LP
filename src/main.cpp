@@ -1,34 +1,30 @@
 #include <iostream>
 #include "headers/encoder.h"
+#include "headers/byteworker.h"
+int main()
+{
+    ByteWorker bt= ByteWorker();
+    bt.parseBigEndian();
 
 
+    /*
+    Encoder encoder = Encoder();
+    auto EncodedImage = encoder.encodeImage("letter.txt");
+    int index = 1;
+    for (auto &row : EncodedImage)
+    {
 
-
-
-int main(){
-
-    Encoder encoder=Encoder();
-    auto EncodedImage=encoder.encodeImage("letter.txt");
-    int index=1;
-    for( auto& row: EncodedImage ){
-
-        for(auto& value: row){
-            std::cout<<"("<<value<<"),";
-        
+        for (auto &value : row)
+        {
+            std::cout << "(" << value << "),";
         }
-        if(index%4 ==0){
-             std::cout<<"\n";
+        if (index % 4 == 0)
+        {
+            std::cout << "\n";
         }
-  
 
         index++;
-
     }
 
-    std::cout<<"Calculatin size";
-
-    return 0;
-
-
+    return 0;*/
 }
-
